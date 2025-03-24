@@ -8,6 +8,7 @@ public class WebserviceRestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebserviceRestApplication.class, args);
+		
 	}
 
 }
