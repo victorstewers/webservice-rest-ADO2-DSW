@@ -3,6 +3,10 @@ package br.senac.tads.dsw.webservice_rest;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
+
+@Service
 public class DadosService {
     private Map<Integer, String> dados;
 
