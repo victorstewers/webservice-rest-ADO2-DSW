@@ -1,6 +1,6 @@
 
 async function findAll() {
-    const httpResp = await fetch(`/api/dados/`);
+    const httpResp = await fetch(`http://localhost:8080/api/dados`);
     if (!httpResp.ok) {
         alert('Erro ao buscar dados');
     }
@@ -24,7 +24,7 @@ async function findAll() {
             return;
     }
         
-        const httpResp = await fetch(`/api/dados/${id}`);
+    const httpResp = await fetch(`http://localhost:8080/api/dados/${id}`);
         if (!httpResp.ok) {
             alert('Erro ao buscar dados');
         }
