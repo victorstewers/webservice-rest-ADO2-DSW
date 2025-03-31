@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 
 @RestController
 @RequestMapping("/api/dados")
@@ -20,8 +19,7 @@ public class DadosRestController {
     @Autowired
     private DadosService service;
 
-    @Autowired
-    private ObjectMapper objectMapper;
+    
 
     @GetMapping
     public List<DadosDto> findAll() {
