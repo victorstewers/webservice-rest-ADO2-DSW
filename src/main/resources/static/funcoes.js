@@ -1,6 +1,6 @@
 
 async function findAll() {
-    const httpResp = await fetch(`http://localhost:8080/api/dados`);
+    const httpResp = await fetch(`http://localhost:8080/api/dados/`);
     if (!httpResp.ok) {
         alert('Erro ao buscar dados');
     }
